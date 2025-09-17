@@ -1,2 +1,2 @@
 console.log("hello");
-function test2() {}
+function sum2() {}

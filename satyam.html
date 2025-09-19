@@ -1,13 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Satyam Don...</h1>
-    <h1>Prateek Big Don...</h1>
-    <h1>Addii sabse chota don...</h1>
-</body>
+    <head>
+        <title>Myntra Website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            *{
+    padding: 0%;
+    margin: 0%;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 80px; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+}
+
+.myntra_home{
+    height: 45px;
+}
+.logo_container {
+    margin-left: 4%;
+}
+
+.action_bar {
+    margin-right: 4%;
+}
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 27px 0;
+    border-bottom: 5px solid white;
+}
+
+.nav_bar a:hover {
+    border-bottom: 3px solid #73f6ef;
+    
+}
+
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size: 10px;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search_input {
+     background-color: #f5f5f6;
+     color: #696e79;
+     flex-grow: 1;
+     height: 40px;
+     border: 0;
+     border-radius: 0 4px 4px 0;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 21px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* main section*/
+
+.banner_container {
+    margin: 40px 0;
+}
+
+.banner_image {
+   width: 100%; 
+}
+
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale_item {
+    width: 250px;
+}
+
+.footer_container {
+    padding: 30px 0px 40px 0px;
+    background: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.footer_column a:hover {
+    color: #ff3f6c;
+}
+
+h4 {
+   
+    padding: 30px 0px 40px 0px;
+    background:  #edf1fa;
+    display: flex;
+    justify-content: space-evenly;  
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo_container">
+                <a href="#"><img class="myntra_home" src="logo.jpg" alt="Myntra home"></a>
+            </div>
+            <nav class="nav_bar">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Studio <sup>New</sup></a>
+            </nav>
+            <div class="search_bar">
+                <span class="material-symbols-outlined search_icon">search</span>
+                <input class="search_input" placeholder="Search for products, brands and more">
+            </div>
+            <div class="action_bar">
+                <div class="action_container">
+                    <span class="material-symbols-outlined action_icon">person</span>
+                    <span class="action_name">Profile</span>
+                </div>
+                <div class="action_container">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <span class="action_name">Wishlist</span>
+                </div>
+                <div class="action_container">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="action_name">Bag</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="banner_container">
+                <img class="banner_image" src="banner.jpg" alt="main banner">
+            </div>
+            <div class="category_heading">MEDAL WORTHY BRANDS TO BAG</div>
+            <div class="category_items">
+                 <a href="#"><img class="sale_item" src="1.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="2.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="3.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="4.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="5.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="6.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="7.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="8.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="9.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="10.jpg" alt=""></a>
+            </div>
+            <div class="category_heading">SHOP BY CATEGORY</div>
+            <div class="category_items">
+                <a href="#"><img class="sale_item" src="1.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="2.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="3.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="4.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="5.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="6.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="7.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="8.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="9.jpg" alt=""></a>
+                <a href="#"><img class="sale_item" src="10.jpg" alt=""></a>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Mintra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Mintra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Mintra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Mintra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Mintra Insider</a>
+            </div>
+        </div>
+            <h4>Satyam web designer : 2025</h4>
+        <hr>
+        </footer>
+    </body>
 </html>
